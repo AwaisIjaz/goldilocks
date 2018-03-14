@@ -1,8 +1,8 @@
 
 public class Goldilocks {
-
-	suitableForGoldilocks(int chairWeight, int porridgeTemperature){
 	
+    public static void main(String[] args) {
+    	
 	int goldiWeight = 100;
 	int goldiTemperature = 120;
 	
@@ -38,12 +38,17 @@ public class Goldilocks {
 			{59, 181},
 			{290, 123},
 			{248, 132}
-			};			
+			};
+	
+	    int i = 1;
+        for (int[] weightAndTemperature : listOfWeightandTemperature) {
+        int chairWeight = weightAndTemperature[0];
+        int porridgeTemperature = weightAndTemperature[1];
+        	if (chairWeight >= goldiWeight && porridgeTemperature < goldiTemperature) {
+        		System.out.println(i);
+        	}
+        	i++;
+	      }
 			
 		}
-			
-	
-		
-		
-	}
 }
